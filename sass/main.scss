@@ -8,5 +8,13 @@
 @import './base/typography';
 @import './base/utilities';
 // Components
+@import './components/features';
+@import './components/footer';
+@import './components/gallery';
+@import './components/header';
+@import './components/realtors';
+@import './components/sidebar';
+@import './components/story';
 // Layout
 // Pages
+@import './pages/home';
