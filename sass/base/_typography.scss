@@ -1,0 +1,16 @@
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4:last-child {
+  @extend %heading;
+}
+
+.heading-4 {
+  font-size: 1.9rem;
+  &-light {
+    color: $brighttGrey;
+  }
+  &-dark {
+    color: $darkerGrey;
+  }
+}

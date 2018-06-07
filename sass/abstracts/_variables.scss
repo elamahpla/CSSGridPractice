@@ -8,3 +8,8 @@ $darkerGrey: #6d5d4b;
 
 $primaryFont: 'Nunito', sans-serif;
 $secondaryFont: 'Josefin Sans', sans-serif;
+
+%heading {
+  font-family: $secondaryFont;
+  font-weight: 400;
+}
