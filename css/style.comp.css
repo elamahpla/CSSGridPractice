@@ -15,11 +15,48 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.features {
+  background: orangered;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  color: #000; }
+
+.footer {
+  background: #101d2c;
+  grid-column: full-start / full-end; }
+
+.gallery {
+  background: #54483a;
+  grid-column: full-start / full-end; }
+
 .header {
-  background: #54483a; }
+  background: #54483a;
+  grid-column: full-start / col-end 6; }
+
+.homes {
+  background: #101d2c;
+  grid-column: center-start / center-end; }
 
 .realtors {
-  background: #101d2c; }
+  background: #101d2c;
+  grid-column: col-start 7 / full-end; }
 
 .sidebar {
-  background: #b28451; }
+  background: #b28451;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
+
+.story-pictures {
+  background: #c69963;
+  grid-column: full-start / col-end 4; }
+
+.story-content {
+  background: #f9f7f6;
+  grid-column: col-start 5 / full-end; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
