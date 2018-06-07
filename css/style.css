@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6d5d4b;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.features {
+  background: #aaa; }
+
+.footer {
+  background: #101d2c; }
+
+.gallery {
+  background: #54483a; }
+
+.header {
+  background: #54483a; }
+
+.realtors {
+  background: #101d2c; }
+
+.sidebar {
+  background: #b28451; }
+
+.story-pictures {
+  background: #c69963; }
+
+.story-content {
+  background: #f9f7f6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh; }
+
+.homes {
+  background: #101d2c; }
