@@ -201,8 +201,26 @@ body {
   .header-btn {
     align-self: start;
     justify-self: start; }
-  .header-seenon-logo img {
-    height: 2.5rem; }
+  .header-seenon-text {
+    font-size: 1.6rem;
+    color: #54483a;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center; }
+    .header-seenon-text::before, .header-seenon-text::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background: currentColor; }
+  .header-seenon-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center; }
+    .header-seenon-logo img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .homes {
   margin: 15rem 0;
