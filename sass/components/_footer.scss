@@ -1,4 +1,40 @@
 .footer {
   background: $darkBlue;
   grid-column: full-start / full-end;
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-items: center;
+  &-link:link,
+  &-link:visited {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s;
+  }
+  &-link:hover,
+  &-link:active {
+    background: rgba(white, .05);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: $lightGrey;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
 }
