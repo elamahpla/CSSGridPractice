@@ -11,6 +11,12 @@
   grid-column: full-start / col-end 6;
   grid-row-gap: 1.5rem;
   justify-content: center;
+  @include respond(customSmall) {
+   grid-column: 1 / -1; 
+  }
+  @include respond(phone) {
+    padding: 5rem;
+  }
   &-logo {
     height: 3rem;
     justify-self: center;
